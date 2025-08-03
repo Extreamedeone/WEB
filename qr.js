@@ -16,7 +16,7 @@ const MESSAGE = process.env.MESSAGE ||  `
 *SESSION GENERATED SUCCESSFULY* 
 
 *DON'T FORGET TO FORK AND STAR THE REPO* 
-https://github.com/GuhailTechInfo/EXTREAME-XMD
+https://github.com/Extreamedeone/EXTREAME-XMD
 
 *Contact Dev * 💭
 +254791231068
