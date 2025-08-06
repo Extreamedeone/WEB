@@ -68,7 +68,11 @@ router.get('/', async (req, res) => {
                         if (fs.existsSync('./auth_info_baileys/creds.json'));
 
                         const auth_path = './auth_info_baileys/';
-                        let user = Smd.user.id;
+                       // let user = Smd.user.id;
+        
+                        let user = Smd.user.id.includes(':')
+                   ? Smd.user.id.split(':')[0] + '@s.whatsapp.net'
+                   : Smd.user.id;
 
                         // Define randomMegaId function to generate random IDs
                         function randomMegaId(length = 6, numberLength = 4) {
