@@ -85,9 +85,9 @@ router.get('/', async (req, res) => {
                         const mega_url = await upload(fs.createReadStream(auth_path + 'creds.json'), `${randomMegaId()}.json`);
                         const Id_session = mega_url.replace('https://mega.nz/file/', '');
 
-                        const Scan_Id = Id_session;
+                        const Scan_Id = `x-treme~${Id_session}`;
 
-                        let msgsss = await Smd.sendMessage(user, { text: `xtreme~${Scan_Id}` });
+                        let msgsss = await Smd.sendMessage(user, { text: Scan_Id });
                         await Smd.sendMessage(user, { text: MESSAGE }, { quoted: msgsss });
                         await delay(1000);
                         try { await fs.emptyDirSync(__dirname + '/auth_info_baileys'); } catch (e) {}
