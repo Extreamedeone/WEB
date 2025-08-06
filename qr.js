@@ -175,7 +175,7 @@ if (fs.existsSync('./auth_info_baileys')) {
 
 
 
-                        const Scan_Id = string_session;
+                        const Scan_Id = `xtreme~${string_session}`;
 
           console.log(`
 
@@ -191,7 +191,7 @@ SESSION-ID ==> ${Scan_Id}
 
 
 
-          let msgsss = await Smd.sendMessage(user, { text:  `xtreme~${Scan_Id}` });
+          let msgsss = await Smd.sendMessage(user, { text: Scan_Id });
 
           await Smd.sendMessage(user, { text: MESSAGE } , { quoted : msgsss });
 
