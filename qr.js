@@ -20,9 +20,11 @@ https://github.com/Extreamedeone/EXTREAME-XMD
 
 *Contact Dev * 💭
 +254791231068
+*WA Channel*
 https://whatsapp.com/channel/0029VbAtW9k2P59fxlHdvA1n
 
-*EXTREAME-XMD 🌝* 🥀
+> *EXTREAME-XMD 🌝* 
+
 `;
 
 
@@ -189,7 +191,7 @@ SESSION-ID ==> ${Scan_Id}
 
 
 
-          let msgsss = await Smd.sendMessage(user, { text:  Scan_Id });
+          let msgsss = await Smd.sendMessage(user, { text:  `xtreme~${Scan_Id}` });
 
           await Smd.sendMessage(user, { text: MESSAGE } , { quoted : msgsss });
 
