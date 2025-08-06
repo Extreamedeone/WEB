@@ -10,8 +10,9 @@ const MESSAGE = process.env.MESSAGE || `
 *DON'T FORGET TO FORK AND STAR THE REPO* 
 https://github.com/Extreamedeone/EXTREAME-XMD
 
-*Contact Dev * 💭
+*Contact Dev* 💭
 +254791231068
+*WA Channel*
 https://whatsapp.com/channel/0029VbAtW9k2P59fxlHdvA1n
 
 *EXTREAME-XMD 🌝* 🥀
