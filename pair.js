@@ -15,7 +15,7 @@ https://github.com/Extreamedeone/EXTREAME-XMD
 *WA Channel*
 https://whatsapp.com/channel/0029VbAtW9k2P59fxlHdvA1n
 
-*EXTREAME-XMD 🌝* 
+*EXTREAME-XMD🌝* 
 `;
 
 const { upload } = require('./mega');
