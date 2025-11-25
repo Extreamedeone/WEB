@@ -11,7 +11,7 @@ const __path = process.cwd();
 const PORT = process.env.PORT || 10000;
 
 const qrRoute = require('./qr');
-const codeRoute = require('./pair.cjs');
+const codeRoute = require('./pair.mjs');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true}));
