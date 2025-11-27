@@ -4,9 +4,6 @@
   "type": "commonjs",
   "description": "A multi-functional WhatsApp bot Pairing Web and QR Scanner.",
   "main": "index.js",
-  "engines": {
-        "node": ">=20.0.0"
-  },
   "scripts": {
     "start": "pm2 start index.js --deep-monitoring --attach --name qasim",
     "stop": "pm2 stop qasim",
