@@ -140,5 +140,5 @@ router.get('/', async (req, res) => {
     await SUHAIL();
 });
 
-export default = router;
+export default router;
                     
