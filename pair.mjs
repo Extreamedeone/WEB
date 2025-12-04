@@ -1,9 +1,9 @@
-const express = require('express');
-const fs = require('fs-extra');
-const { exec } = require("child_process");
+import express from 'express';
+import fs from 'fs-extra';
+import { exec } from "child_process";
 let router = express.Router();
-const pino = require("pino");
-const { Boom } = require("@hapi/boom");
+import pino from "pino";
+import { Boom } from "@hapi/boom";
 const MESSAGE = process.env.MESSAGE || `
 *SESSION GENERATED SUCCESSFULY* 
 
@@ -18,15 +18,15 @@ https://whatsapp.com/channel/0029VbAtW9k2P59fxlHdvA1n
 *EXTREAME-XMD🌝* 
 `;
 
-const { upload } = require('./mega');
-const {
+import { upload } from './mega';
+import {
     default: makeWASocket,
     useMultiFileAuthState,
     delay,
     makeCacheableSignalKeyStore,
     Browsers,
     DisconnectReason
-} = require("@whiskeysockets/baileys");
+} from "@whiskeysockets/baileys";
 
 // Ensure the directory is empty when the app starts
 if (fs.existsSync('./auth_info_baileys')) {
@@ -140,5 +140,5 @@ router.get('/', async (req, res) => {
     await SUHAIL();
 });
 
-module.exports = router;
+export default = router;
                     
