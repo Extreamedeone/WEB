@@ -10,8 +10,8 @@ const app = express();
 const __path = process.cwd();
 const PORT = process.env.PORT || 10000;
 
-const qrRoute = require('./qr');
-const codeRoute = require('./pair');
+const qrRoute = require('./qr.js');
+const codeRoute = require('./pair.js');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true}));
