@@ -113,14 +113,7 @@ YOU CAN DEPLOY IT ON ANY CLOUD PLATFORM e.g `HEROKU` `RENDER` `KOYEB` etc.
 
 Note: Make Sure Add Your Email And Password ( Required In mega.js ) Before Running/Deploying The API.
 
-## OTHER PROJECTS:
 
-- [PASTE SESSION](https://github.com/GlobalTechInfo/PAIRING-WEB)
-- [WHATSAPP BOT](https://github.com/GlobalTechInfo/MEGA-AI)
-- [TELEGRAM BOT](https://github.com/GlobalTechInfo/TELEGRAM-AI#readme)
-
-
-
-| [![Qasim Ali](https://github.com/GlobalTechInfo.png?size=100)](https://github.com/GlobalTechInfo) |
+| [![Extreamedeone](https://github.com/Extreamedeone.png?size=100)](https://github.com/Extreamedeone) |
 | --- |
-| [Qasim Ali](https://github.com/GlobalTechInfo) |
+| [Extreamedeone](https://github.com/Extreamedeone) |
