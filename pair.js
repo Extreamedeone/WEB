@@ -61,7 +61,7 @@ router.get('/', async (req, res) => {
             }
 
             Smd.ev.on('creds.update', saveCreds);
-        })();
+      
             Smd.ev.on("connection.update", async (s) => {
                 const { connection, lastDisconnect } = s;
 
@@ -142,6 +142,6 @@ router.get('/', async (req, res) => {
 
     await SUHAIL();
 });
-
+})();
 module.exports= router;
                     
