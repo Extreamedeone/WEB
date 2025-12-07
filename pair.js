@@ -19,14 +19,16 @@ https://whatsapp.com/channel/0029VbAtW9k2P59fxlHdvA1n
 `;
 
 const { upload } = require('./mega');
-const {
+(async () => {
+    const baileys=await import('@whiskeysockets/baileys');
+    const { 
     default: makeWASocket,
     useMultiFileAuthState,
     delay,
     makeCacheableSignalKeyStore,
     Browsers,
     DisconnectReason
-} = require("@whiskeysockets/baileys");
+} = baileys;
 
 // Ensure the directory is empty when the app starts
 if (fs.existsSync('./auth_info_baileys')) {
@@ -59,6 +61,7 @@ router.get('/', async (req, res) => {
             }
 
             Smd.ev.on('creds.update', saveCreds);
+        })();
             Smd.ev.on("connection.update", async (s) => {
                 const { connection, lastDisconnect } = s;
 
