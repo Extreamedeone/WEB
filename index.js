@@ -22,7 +22,10 @@ app.use('/code', codeRoute);
 app.use('/code', (req, res) => {
   res.sendFile(path.join(__path, 'pair.html'));
 });
-
+app.use('/qr', (req, res) => {
+  res.sendFile(path.join(__path, 'pair.html'));
+});
+  
 app.use('/', (req, res) => {
   res.sendFile(path.join(__path, 'main.html'));
 });
