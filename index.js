@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({ extended: true}));
 app.use('/qr', qrRoute);
 app.use('/code', codeRoute);
 
-app.use('/pair', (req, res) => {
+app.use('/code', (req, res) => {
   res.sendFile(path.join(__path, 'pair.html'));
 });
 
